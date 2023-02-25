@@ -4,17 +4,22 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a1850f66-4f1f-4d16-a6cf-84a20b40077f" name="Changes" comment="Day 15 is finished">
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/cydeo/pages/GoogleSearchPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/cydeo/pages/WikipediaSearchPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/cydeo/step_definitions/Wiki_StepDefinitions.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/features/wikiSearch.feature" afterDir="false" />
+    <list default="true" id="a1850f66-4f1f-4d16-a6cf-84a20b40077f" name="Changes" comment="Day 16 is in progress">
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/cydeo/pages/BasePage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/cydeo/pages/DropdownsPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/cydeo/pages/OrderPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/cydeo/pages/WebTableLoginPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/cydeo/step_definitions/DataTable_StepDefinitions.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/cydeo/step_definitions/Order_StepDefinitions.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/cydeo/step_definitions/WebTable_StepDefinitions.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/features/dataTables.feature" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/features/webTableLogin.feature" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/features/webTableOrder.feature" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/cydeo/runners/CukesRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/cydeo/runners/CukesRunner.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/cydeo/step_definitions/GoogleStepDefinitions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/cydeo/step_definitions/GoogleStepDefinitions.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/configuration.properties" beforeDir="false" afterPath="$PROJECT_DIR$/configuration.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/cydeo/step_definitions/Hooks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/cydeo/step_definitions/Hooks.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/googleSearch.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/googleSearch.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/login.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/login.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/cydeo/utilities/BrowserUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/cydeo/utilities/BrowserUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/wikiSearch.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/wikiSearch.feature" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,15 +66,16 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager" selected="Cucumber Java.Feature: wikiSearch">
-    <configuration name="Feature: wikiSearch" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.CukesRunner">
+    <configuration name="Scenario: Positive login scenario" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/wikiSearch.feature" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/webTableLogin.feature" />
       <option name="GLUE" value="com.cydeo.step_definitions" />
       <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
       <module name="cydeo-cucumber-junit" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter" />
-      <option name="SUGGESTED_NAME" value="Feature: wikiSearch" />
+      <option name="NAME_FILTER" value="^Positive login scenario$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^Positive login scenario$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: Positive login scenario" />
       <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
@@ -81,15 +87,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Scenario: Search functionality result title verification" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+    <configuration name="Scenario: User should be able to place order and order seen in web table" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/googleSearch.feature" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/webTableOrder.feature" />
       <option name="GLUE" value="com.cydeo.step_definitions" />
       <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
       <module name="cydeo-cucumber-junit" />
-      <option name="NAME_FILTER" value="^Search functionality result title verification$" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^Search functionality result title verification$&quot;" />
-      <option name="SUGGESTED_NAME" value="Scenario: Search functionality result title verification" />
+      <option name="NAME_FILTER" value="^User should be able to place order and order seen in web table$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^User should be able to place order and order seen in web table$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: User should be able to place order and order seen in web table" />
       <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
@@ -101,15 +107,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Scenario: Wikipedia Search Functionality Header Verification" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+    <configuration name="Scenario: User should be able to see all 12 month in month dropdown (1)" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/wikiSearch.feature" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/dataTables.feature" />
       <option name="GLUE" value="com.cydeo.step_definitions" />
       <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
       <module name="cydeo-cucumber-junit" />
-      <option name="NAME_FILTER" value="^Wikipedia Search Functionality Header Verification$" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^Wikipedia Search Functionality Header Verification$&quot;" />
-      <option name="SUGGESTED_NAME" value="Scenario: Wikipedia Search Functionality Header Verification" />
+      <option name="NAME_FILTER" value="^User should be able to see all 12 month in month dropdown$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^User should be able to see all 12 month in month dropdown$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: User should be able to see all 12 month in month dropdown" />
       <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
@@ -121,15 +127,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Scenario: Wikipedia Search Functionality Title Verification" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+    <configuration name="Scenario: User should be able to see all 12 month in month dropdown" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/wikiSearch.feature" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/webTableLogin.feature" />
       <option name="GLUE" value="com.cydeo.step_definitions" />
       <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
       <module name="cydeo-cucumber-junit" />
-      <option name="NAME_FILTER" value="^Wikipedia Search Functionality Title Verification$" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^Wikipedia Search Functionality Title Verification$&quot;" />
-      <option name="SUGGESTED_NAME" value="Scenario: Wikipedia Search Functionality Title Verification" />
+      <option name="NAME_FILTER" value="^User should be able to see all 12 month in month dropdown$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^User should be able to see all 12 month in month dropdown$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: User should be able to see all 12 month in month dropdown" />
       <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
@@ -158,13 +164,18 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Cucumber Java.Feature: wikiSearch" />
-        <item itemvalue="Cucumber Java.Scenario: Wikipedia Search Functionality Header Verification" />
-        <item itemvalue="Cucumber Java.Scenario: Wikipedia Search Functionality Title Verification" />
         <item itemvalue="JUnit.CukesRunner" />
-        <item itemvalue="Cucumber Java.Scenario: Search functionality result title verification" />
+        <item itemvalue="Cucumber Java.Scenario: User should be able to place order and order seen in web table" />
+        <item itemvalue="Cucumber Java.Scenario: User should be able to see all 12 month in month dropdown (1)" />
+        <item itemvalue="Cucumber Java.Scenario: User should be able to see all 12 month in month dropdown" />
+        <item itemvalue="Cucumber Java.Scenario: Positive login scenario" />
       </list>
     </recent_temporary>
+  </component>
+  <component name="SeleniumInternalSettingsState">
+    <option name="lastFrameworkName" value="Selenium" />
+    <option name="lastLanguageId" value="JAVA" />
+    <option name="lastUrl" value="https://web-table-2.cydeo.com/create-order" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -178,7 +189,8 @@
       <workItem from="1676394880063" duration="346000" />
       <workItem from="1676395239500" duration="12598000" />
       <workItem from="1676577207310" duration="9415000" />
-      <workItem from="1676799809643" duration="7662000" />
+      <workItem from="1676799809643" duration="7866000" />
+      <workItem from="1677165181569" duration="22664000" />
     </task>
     <task id="LOCAL-00001" summary="Cucumber is installed">
       <created>1676404320536</created>
@@ -201,7 +213,14 @@
       <option name="project" value="LOCAL" />
       <updated>1676741186455</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Day 16 is in progress">
+      <created>1676842979419</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1676842979419</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -211,6 +230,7 @@
     <MESSAGE value="Cucumber is installed" />
     <MESSAGE value="Cucumber intro is finished" />
     <MESSAGE value="Day 15 is finished" />
-    <option name="LAST_COMMIT_MESSAGE" value="Day 15 is finished" />
+    <MESSAGE value="Day 16 is in progress" />
+    <option name="LAST_COMMIT_MESSAGE" value="Day 16 is in progress" />
   </component>
 </project>
